@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+      body {font-family: "Lato", sans-serif}
+      .mySlides {display: none}
+
+      .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+        article h2 {
+            color: #333;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 20px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .content img {
+            float: right;
+            margin-left: 20px;
+            width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Industrial Organization Department</a>
+    <a href="#circulareco" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Circular Economy</a>
+    <a href="#resilience" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resilience</a>
+	  <a href="#mentor" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Mentor</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#circulareco" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Circular Economy</a>
+  <a href="#resilience" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">resilience</a>
+  <a href="#mentor" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mentor</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="container">
+    <article>
+        <h2>Building Resilience in Critical Infrastructures: A Global Imperative</h2>
+        <p class="meta">By Resilience</p>
+        <div class="content">
+            <img src="sede_ibaeta.jpg" alt="News Image">
+            <p>As the world faces an increasing number of challenges from natural disasters to cyber threats, the resilience of critical infrastructures has never been more crucial. Critical infrastructures, including energy grids, transportation systems, and communication networks, form the backbone of modern societies. Their ability to withstand, adapt to, and rapidly recover from disruptive events is essential for maintaining societal stability and economic continuity.</p>
+            <p>Recent research and initiatives have focused on developing strategies to enhance the resilience of these infrastructures. One approach gaining traction is the integration of advanced technologies such as artificial intelligence (AI) and the Internet of Things (IoT) to monitor and manage infrastructure systems in real-time. These technologies can predict potential failures, optimize maintenance schedules, and ensure a swift response to emergencies.</p>
+            <p>Moreover, collaboration between public and private sectors is vital in strengthening infrastructure resilience. Governments are working closely with private companies to establish robust frameworks and protocols that ensure the continuous operation of critical services during crises. For example, the establishment of cybersecurity standards and the sharing of threat intelligence are key components of this collaborative effort.</p>
+            <p>In addition, resilience planning must consider the interdependencies between different infrastructure systems. Disruptions in one system can have cascading effects on others, amplifying the impact of an initial failure. By adopting a holistic approach that accounts for these interdependencies, cities and nations can develop more comprehensive and effective resilience strategies.</p>
+            <p>Overall, the resilience of critical infrastructures is a global priority that requires coordinated efforts, technological innovation, and proactive planning. As threats continue to evolve, so too must the strategies and solutions designed to protect the essential services that underpin our way of life.</p>
+        </div>
+    </article>
+</div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="mentor">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Manuel Lardizabal Ibilbidea, 13, 20018 Donostia, Gipuzkoa<br>
+        <i class="fa fa-phone" style="width:30px"></i> +34 943 21 98 77<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

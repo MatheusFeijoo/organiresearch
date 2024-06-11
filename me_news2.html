@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+      body {font-family: "Lato", sans-serif}
+      .mySlides {display: none}
+
+      .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+        article h2 {
+            color: #333;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 20px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .content img {
+            float: right;
+            margin-left: 20px;
+            width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Industrial Organization Department</a>
+    <a href="#circulareco" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Circular Economy</a>
+    <a href="#resilience" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resilience</a>
+	  <a href="#mentor" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Mentor</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#circulareco" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Circular Economy</a>
+  <a href="#resilience" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">resilience</a>
+  <a href="#mentor" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mentor</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="container">
+    <article>
+        <h2>Flipped Learning in Engineering: A New Paradigm for Higher Education</h2>
+        <p class="meta">By Mentor</p>
+        <div class="content">
+            <img src="sede_ibaeta.jpg" alt="News Image">
+            <p>Flipped learning is emerging as a revolutionary teaching methodology in engineering higher education, reshaping traditional classroom dynamics and enhancing student engagement. This approach inverts the conventional teaching model by delivering instructional content outside of the classroom, often through online videos, and using class time for interactive, hands-on activities.</p>
+            <p>Studies have shown that flipped learning significantly improves student performance and satisfaction in engineering courses. By shifting lectures to homework and dedicating class time to problem-solving, discussions, and collaborative projects, students can engage more deeply with the material and apply theoretical concepts in practical settings.</p>
+            <p>The benefits of flipped learning extend beyond improved academic outcomes. It promotes active learning, critical thinking, and teamwork, skills that are essential for engineering professionals. Moreover, it allows instructors to provide more personalized support, addressing individual students' needs and fostering a more inclusive learning environment.</p>
+            <p>Flipped learning also leverages technological advancements, such as online learning management systems and digital collaboration tools, to facilitate seamless content delivery and student interaction. These technologies enable instructors to track student progress, provide timely feedback, and create a more dynamic and flexible learning experience.</p>
+            <p>As the demand for skilled engineers continues to grow, the adoption of flipped learning in engineering education represents a promising shift towards more effective and engaging teaching practices, preparing students to meet the challenges of the modern workforce.</p>
+        </div>
+    </article>
+</div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="mentor">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Manuel Lardizabal Ibilbidea, 13, 20018 Donostia, Gipuzkoa<br>
+        <i class="fa fa-phone" style="width:30px"></i> +34 943 21 98 77<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
